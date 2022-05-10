@@ -1,0 +1,20 @@
+body {
+
+    overflow-x: hidden;
+    padding-bottom: 32px;
+
+}
+
+button {
+
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: #00218d;
+    color: white;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-weight: 500;
+    font-size: 14px;
+
+}
