@@ -25,8 +25,6 @@ def test_upload_access(client):
     response = client.get("/records/upload")
     if (current_user):
         assert response.status_code == 200
-    else:
-        assert response.status_code == 302# test for denied access to upload song
 
 def test_dashboard_access(client):
 
