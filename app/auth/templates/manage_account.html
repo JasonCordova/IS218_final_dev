@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
+
+    <div class="row">
+
+         <div class="mx-auto">
+             <h2 style="font-weight: 600; font-size: 32px; margin-top: 32px; margin-bottom: 32px;">Manage Account</h2>
+
+             <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 16px;">
+                 <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;
+                 width: 96px; height: 96px; background-color: #648ae9; color: white; border-radius: 100%; font-size: 36px;
+                 font-weight: 600; margin-bottom: 16px;">{{ current_user.email[0].upper() }}</div>
+                 <span style="font-size: 20px; font-weight: 600;">{{ current_user.email }}</span>
+                 <span style="font-size: 14px;"><b>Joined: </b>{{ dateThing }}</span>
+             </div>
+
+             {{ render_form(form) }}
+         </div>
+    </div>
+
+
+{% endblock %}

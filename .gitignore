@@ -1,0 +1,12 @@
+.idea
+.cache
+.local
+.pytest_cache
+.ash_history
+__pycache__
+.coverage
+.bash_history
+.env
+database
+logs!/app/.env
+!/.env.test

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
+             <h1 style="font-weight: 600;width: 100%;display: flex;flex-direction: column;justify-content: flex-end;align-items: flex-start;background: linear-gradient(0deg, #0000ff8a, #ff000075), url('https://c.tenor.com/QZG9CftjeQQAAAAd/abstract-pattern.gif');color: white;padding: 40px 108px;box-sizing: content-box;margin-left: -108px;height: 240px;margin-top: 0px;margin-bottom: 32px;font-size: 48px;letter-spacing: -3px;background-size: cover;">
+
+                 <span>Upload Transactions</span>
+                 <div style='margin-top: 16px; font-size: 14px; font-weight: 400; letter-spacing: 0px; max-width: 640px;'>You can upload any CSV file to serve as your bank statements. Once uploaded, your statements will have automatic effect on your balance based on your withdrawals and deposits.</div>
+
+             </h1>
+
+             {{ render_form(form) }}
+{% endblock %}

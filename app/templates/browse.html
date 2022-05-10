@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/table.html' import render_table %}
+{% from "bootstrap/pagination.html" import render_pagination %}
+
+<div class="row col-8">
+    {% block title %}Browse {{ record_type }}{% endblock %}
+    {% block content %}
+        <h1 style="font-weight: 600;width: 100%;display: flex;flex-direction: column;justify-content: flex-end;align-items: flex-start;background: linear-gradient(0deg, #0000ff8a, #ff000075), url('https://c.tenor.com/QZG9CftjeQQAAAAd/abstract-pattern.gif');color: white;padding: 40px 108px;box-sizing: content-box;margin-left: -108px;height: 240px;margin-top: 0px;margin-bottom: 32px;font-size: 48px;letter-spacing: -3px;background-size: cover;">Browse {{ record_type }}</h1>
+        {{ render_table(data,titles,show_actions=True, table_classes='table-striped', header_classes='thead-dark', responsive=True, responsive_class='table-responsive-sm', model=User,
+            view_url=retrieve_url,
+            edit_url=edit_url,
+            delete_url=delete_url,
+            new_url=add_url) }}
+    {% endblock %}
+</div>
