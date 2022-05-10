@@ -6,6 +6,7 @@ from faker import Faker
 from werkzeug.security import generate_password_hash
 from flask_login import login_user
 
+
 def test_adding_user(application, client):
     log = logging.getLogger("myApp")
     with application.app_context():
