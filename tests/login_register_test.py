@@ -18,3 +18,14 @@ def test_user_login(application):
         form.password.data = "testtest"
         form.submit
         assert form.validate
+
+def test_user_register(application):
+
+    with application.test_request_context():
+
+        form = register_form()
+        form.email.data = "FAKEUSER@gmail.com"
+        form.password.data = "testtest"
+        form.confirm.data = "testtest"
+        form.submit
+        assert form.validate
