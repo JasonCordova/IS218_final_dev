@@ -25,3 +25,9 @@ def test_upload_record(application):
         form = csv_upload()
         form.file = record
         assert form.validate
+
+def test_upload_record_failed(client):
+
+    response = client.get('/records/upload')
+    assert response.status_code == 302 # User isn't logged in since we don't have a test_client
+    assert db.session.query(User).count() == 0

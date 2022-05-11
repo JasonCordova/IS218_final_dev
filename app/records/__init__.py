@@ -32,7 +32,7 @@ def records_browse(page):
         abort(404)
 
 @records.route('/records/upload', methods=['POST', 'GET'])
-
+@login_required
 def records_upload():
     form = csv_upload()
 
