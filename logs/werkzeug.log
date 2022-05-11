@@ -38,3 +38,6 @@
 2022-05-11 01:27:39,718 [INFO] werkzeug: 172.23.0.1 - - [11/May/2022 01:27:39] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
 2022-05-11 01:27:39,739 [INFO] werkzeug: 172.23.0.1 - - [11/May/2022 01:27:39] "[36mGET /bootstrap/static/icons/bootstrap-icons.svg HTTP/1.1[0m" 304 -
 2022-05-11 01:32:43,939 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/click_test.py', reloading
+2022-05-11 01:53:11,872 [INFO] werkzeug: 172.23.0.1 - - [11/May/2022 01:53:11] "GET /dashboard HTTP/1.1" 200 -
+2022-05-11 01:53:11,930 [INFO] werkzeug: 172.23.0.1 - - [11/May/2022 01:53:11] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2022-05-11 01:53:19,950 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/dashboard_test.py', reloading
