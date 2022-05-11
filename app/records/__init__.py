@@ -38,7 +38,6 @@ def records_upload():
 
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
-        log.info(form.data)
         filename = secure_filename(form.file.data.filename)
 
         if filename == '':

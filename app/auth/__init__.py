@@ -65,8 +65,6 @@ def login():
 def dashboard(page):
 
     data = Record.query.filter_by(user_id=current_user.id)
-    log = logging.getLogger('myApp')
-    log.info(data)
 
     try:
         return render_template('dashboard.html', data=data)
