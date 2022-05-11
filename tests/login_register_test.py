@@ -25,6 +25,7 @@ def test_user_register(application):
 
         form = register_form()
         form.email.data = "FAKEUSER@gmail.com"
+
         form.password.data = "testtest"
         form.confirm.data = "testtest"
         form.submit
