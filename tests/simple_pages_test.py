@@ -13,3 +13,8 @@ def test_request_index(client):
     """This gets the index page"""
     response = client.get("/")
     assert response.status_code == 200
+
+def test_request_about(client):
+    """This gets the about page"""
+    response = client.get("/about")
+    assert response.status_code == 200
