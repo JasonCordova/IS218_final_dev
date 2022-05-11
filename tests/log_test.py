@@ -11,7 +11,12 @@ def test_request_log():
 
 def test_errors_log():
 
-    assert True
+    root = os.path.dirname(os.path.abspath(__file__))
+    requestlog = os.path.join(root, '../logs/errors.log')
+
+    if not os.path.exists(requestlog):
+        os.mknod(requestlog)
+    assert os.path.exists(requestlog) == True
 
 def test_myapp_log():
 
