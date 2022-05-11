@@ -18,3 +18,8 @@ def test_request_about(client):
     """This gets the about page"""
     response = client.get("/about")
     assert response.status_code == 200
+
+def test_request_page1(client):
+    """This gets the welcome page"""
+    response = client.get("/welcome")
+    assert response.status_code == 200
