@@ -21,9 +21,9 @@ Heroku Prod App: https://jlc23-flask-prod.herokuapp.com
 
 Development Workflow Badge:
 
-[![Development Workflow](https://github.com/JasonCordova/IS218F22/actions/workflows/dev.yml/badge.svg)](https://github.com/JasonCordova/IS218F22/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/JasonCordova/IS218_final_dev/actions/workflows/dev.yml/badge.svg)](https://github.com/JasonCordova/IS218_final_dev/actions/workflows/dev.yml)
 
 Production Workflow Badge:
 
-[![Production Workflow](https://github.com/JasonCordova/IS218F22/actions/workflows/prod.yml/badge.svg)](https://github.com/JasonCordova/IS218F22/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/JasonCordova/IS218_final_dev/actions/workflows/prod.yml/badge.svg)](https://github.com/JasonCordova/IS218_final_dev/actions/workflows/prod.yml)
 
