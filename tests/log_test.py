@@ -38,7 +38,12 @@ def test_werkzeug_log():
 
 def test_sqlalchemy_log():
 
-    assert True
+    root = os.path.dirname(os.path.abspath(__file__))
+    requestlog = os.path.join(root, '../logs/errors.log')
+
+    if not os.path.exists(requestlog):
+        os.mknod(requestlog)
+    assert os.path.exists(requestlog) == True
 
 def test_handler_log():
 
