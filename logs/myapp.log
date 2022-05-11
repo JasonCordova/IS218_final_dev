@@ -1,7 +1,8 @@
-2022-05-05 22:00:57,799 [INFO] myApp: {'file': <FileStorage: 'transactions.csv' ('text/csv')>, 'submit': True, 'csrf_token': 'ImY0YzE1MDE2MGE5MDRlMzMwM2E1MTUyNGUwOTdhOTg0OTVkNzJiN2Yi.YnRF4g.7fCAhZZqDwtNEvoeTNNiN--1FCs'}
-2022-05-05 22:00:57,820 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (transactions.csv) at 05/05/2022 - 22:00:57
-2022-05-05 22:01:08,996 [INFO] myApp: {'file': <FileStorage: 'test.csv' (None)>, 'submit': True, 'csrf_token': 'ImY0YzE1MDE2MGE5MDRlMzMwM2E1MTUyNGUwOTdhOTg0OTVkNzJiN2Yi.YnREvQ.duakqz1dioLIFSLlg0i_k1GJnLM'}
-2022-05-05 22:01:37,389 [INFO] myApp: {'file': <FileStorage: 'test.csv' (None)>, 'submit': True, 'csrf_token': 'ImY0YzE1MDE2MGE5MDRlMzMwM2E1MTUyNGUwOTdhOTg0OTVkNzJiN2Yi.YnREvQ.duakqz1dioLIFSLlg0i_k1GJnLM'}
-2022-05-07 21:47:05,771 [INFO] myApp: SELECT records.id AS records_id, records.amount AS records_amount, records.type AS records_type, records.user_id AS records_user_id 
-FROM records 
-WHERE records.user_id = ?
+2022-05-11 01:21:18,837 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (transactions.csv) at 05/11/2022 - 01:21:18
+2022-05-11 14:20:09,994 [INFO] myApp: <User 'keith@webizly.com'>
+2022-05-11 14:20:25,789 [INFO] myApp: <User 'keith@webizly.com'>
+2022-05-11 14:20:56,353 [INFO] myApp: <User 'keith@webizly.com'>
+2022-05-11 14:21:53,137 [INFO] myApp: <User 'keith@webizly.com'>
+2022-05-11 14:22:24,500 [INFO] myApp: <User 'keith@webizly.com'>
+2022-05-11 14:27:22,174 [INFO] myApp: <User 'keith@webizly.com'>
+2022-05-11 14:29:53,242 [INFO] myApp: <User 'keith@webizly.com'>

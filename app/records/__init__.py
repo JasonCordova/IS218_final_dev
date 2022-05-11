@@ -32,13 +32,12 @@ def records_browse(page):
         abort(404)
 
 @records.route('/records/upload', methods=['POST', 'GET'])
-
+@login_required
 def records_upload():
     form = csv_upload()
 
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
-        log.info(form.data)
         filename = secure_filename(form.file.data.filename)
 
         if filename == '':
