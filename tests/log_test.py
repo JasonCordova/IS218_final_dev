@@ -47,4 +47,10 @@ def test_sqlalchemy_log():
 
 def test_handler_log():
 
-    assert True
+
+    root = os.path.dirname(os.path.abspath(__file__))
+    requestlog = os.path.join(root, '../logs/handler.log')
+
+    if not os.path.exists(requestlog):
+        os.mknod(requestlog)
+    assert os.path.exists(requestlog) == True
