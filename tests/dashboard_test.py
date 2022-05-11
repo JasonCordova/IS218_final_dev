@@ -21,3 +21,12 @@ def test_dashboard_accessed(application):
         assert b'keith@webizly.com' in response.data
         assert response.status_code == 200 # Successful access to dashboard as user keith@webizly.com
 
+def test_dashboard_declined(application):
+
+    application.test_client_class = FlaskLoginClient
+    assert db.session.query(User).count() == 0
+
+    with application.test_client(user = None) as client: # Have the client NOT be signed in.
+
+        response = client.get('/dashboard')
+        assert response.status_code == 302 # 302 is the access denied status code.
